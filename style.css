@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Montserrat", serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(30, 38%, 92%);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(0, 0%, 100%);
+    margin: 25px 15px;
+    border-radius: 15px;
+}
+ 
+main .img-fluid .img-mobile {
+    display: block;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+main .img-fluid .img-desktop {
+    display: none;
+}
+
+main .content {
+    padding: 1rem;
+}
+
+main .content .title {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 10px;
+}
+
+main .content h1 {
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 700;
+    padding-top: 5px;
+}
+
+main .content .description {
+    margin: 1em 0;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+main .content .prix {
+    display: flex;
+    flex-direction: row;
+    margin: 25px 0;
+}
+
+main .content .total1 {
+    font-family: 'Fraunces', sans-serif;
+    font-weight: bold;
+    font-size: xx-large;
+    margin: 0px 15px 0px 0px;
+    color: hsl(158, 36%, 37%);
+}
+
+main .content .total2 {
+    padding-top: 15px;
+    font-size: 10px;
+    text-decoration: line-through;
+}
+
+main .content .btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 5px;
+    border: none;
+    padding: 15px;
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    margin-bottom: 25px;
+    outline: none;
+}
+
+main .content .btn span {
+    margin-left: 8px;
+}
+
+@media screen and (min-width: 375px) {
+    main {
+        width: 50%;
+        flex-direction: row;
+        align-items: center;    
+        height: 61vh;
+        margin: 0 auto;
+    }
+
+    main .img-fluid .img-mobile {
+        display: none;
+    }
+
+    main .img-fluid .img-desktop {
+        display: block;
+        width: 100%;        
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+    
+    main .content {
+        
+    }
+}
